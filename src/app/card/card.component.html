@@ -1,0 +1,13 @@
+
+<p-card header="Advanced Card" subheader="Subheader"  styleClass="ui-card-shadow">
+        <p-header>
+            <img src="Card" src="assets/pic.jpeg">
+        </p-header>
+        <div>
+            {{owner.email}}
+            <div *ngFor="let accom of owner.accommodations">
+                {{accom.description}}
+            </div>
+        </div>
+        
+    </p-card>
